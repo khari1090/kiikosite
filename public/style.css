@@ -3,6 +3,7 @@
 :root{
   --lightblue: #78A2D4;
   --paleblue: #eaf3ff;
+  --pink: #FFD1D1;
 }
 
 body {
@@ -50,6 +51,13 @@ p {
 .card{
   margin: 5% 0px 5% 0px;
   height: 400px;
+  box-shadow: 0 5px 10px rgba(7, 51, 84, 0.15);
+  border-radius: 4px;
+}
+
+.card-100{
+  margin: 5% 0px 5% 0px;
+  height: 100%;
   box-shadow: 0 5px 10px rgba(7, 51, 84, 0.15);
 }
 
