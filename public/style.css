@@ -92,7 +92,9 @@ ul.topnav {
   position: fixed;
   width: 100%;
   box-shadow: 0 5px 10px rgba(7, 51, 84, 0.03);
-
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 
 /* Float the list items side by side */
@@ -129,7 +131,9 @@ ul.topnav li.icon {display: none;}
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
   ul.topnav.responsive {
-    position:absolute;
+    position:fixed;
+    top: 0;
+    z-index: 9999;
     box-shadow: 0 5px 10px rgba(7, 51, 84, 0.15);
   }
   ul.topnav.responsive li.icon {
