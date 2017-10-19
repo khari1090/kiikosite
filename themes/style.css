@@ -8,8 +8,8 @@
 
 body {
     text-align: center;
-    font-family: 'Roboto Mono';
-    background-color: #F3F9FF;
+    /*font-family: 'Roboto Mono';*/
+    background-color: black;
     margin: 0 auto;
 }
 
@@ -113,7 +113,7 @@ ul.topnav li a {
 
 /* Change background color of links on hover */
 ul.topnav li a:hover {
-  background-color: var(--paleblue);
+  background-hugocolor: var(--paleblue);
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */

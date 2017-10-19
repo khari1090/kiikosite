@@ -1,29 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
 
 :root{
   --lightblue: #78A2D4;
   --paleblue: #eaf3ff;
   --pink: #FFD1D1;
+  --offwhite: #F3F9FF;
+  --dark: #181818;
+  --green: #2ECC71;
 }
 
 body {
     text-align: center;
-    font-family: 'Roboto Mono';
-    background-color: #F3F9FF;
+    font-family: 'Montserrat';
+    background-color: var(--offwhite);
     margin: 0 auto;
+    font-size: 16px;
+}
+
+h1{
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
 
 p {
   color: var(--lightblue);
 }
 
+.txt-white{
+  color: var(--offwhite);
+}
+
+section{
+  max-width: 100%;
+}
+
+section.hero{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-image:url(/images/whiteroom.png);
+  background-size: cover;
+  min-height: 300px;
+}
+
+.img-hero{
+  max-width: 800px;
+  width: 90%;
+  margin-top: 70px;
+}
+
 .txt-pink{
   color:
 }
 
+.bg-paleblue{
+  background-color: var(--offwhite) !important;
+}
+
+.bg-dark{
+  background-color: var(--dark);
+}
+
 .wrapper {
   margin: 0 auto;
-  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -33,7 +75,7 @@ p {
   align-items: center;
   justify-content: center;
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .space-between{
@@ -41,15 +83,20 @@ p {
 }
 
 .pad{
-  padding: 2%;
+  padding: 10px;
+}
+
+.cell{
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .well{
-  padding: 5% 0;
+  padding: 4% 0;
 }
 
 .card{
-  margin: 5% 0px 5% 0px;
+  margin: 20px 0px 20px 0px;
   height: 400px;
   box-shadow: 0 5px 10px rgba(7, 51, 84, 0.08);
   border-radius: 4px;
@@ -79,7 +126,20 @@ p {
   width: 54px;
 }
 
+.item-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  padding: 1rem;
+  transform: translateY(-4em);
+  color: #ededed;
+  transition: transform .5s ease-in-out;
+}
+
 /* NAV */
+
+/*.nav-colored { background-color:#000 !important; }
+.nav-transparent { background-color:transparent !important;}*/
 
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
@@ -125,12 +185,14 @@ ul.topnav li.icon {display: none;}
   ul.topnav li.icon {
     float:right;
     display: inline-block;
+    background-color: white !important;
   }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
-  ul.topnav.responsive {
+  ul.topnav.responsive, ul.topnav {
+    background-color: white !important;
     position:fixed;
     top: 0;
     z-index: 9999;
