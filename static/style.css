@@ -52,6 +52,8 @@ section.hero{
   margin-top: 70px;
 }
 
+#img-hero{}
+
 .txt-pink{
   color:
 }
@@ -103,7 +105,7 @@ section.hero{
 }
 
 .card-100{
-  margin: 5% 0px 5% 0px;
+  margin: 20% 0px 5% 0px;
   height: 100%;
   box-shadow: 0 5px 10px rgba(7, 51, 84, 0.08);
 }
